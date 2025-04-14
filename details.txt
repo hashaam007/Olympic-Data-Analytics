@@ -1,0 +1,32 @@
+--- Resource Group
+
+Act like folders
+
+---------------------------------- ProjectPro website
+
+-- storage account (darshilolympics)
+-- data factory (testingdf1998)
+
+
+steps
+
+1. load data to storage using ADF (by HTTP)
+2. do some basic data transformation (spark code) and load data to datalake (transform_data)
+	mount adls storage to azure databricks (app registration)
+
+-- client id --- 0371ef93-d9fd-44fa-8c50-a51a2c0c586d
+-- tenant id ---  fbfc1427-bd99-4679-9bc7-f032a6ce0c58
+
+-- secret key --- eTx8Q~x42yZV3XGXeIt3LENFLeRHiu15e-fQVcRQ
+
+can also put this to key valut
+
+
+got the error of authorization to solve this, go to storageaccount > container> add role assignment > storage blob contribute role (R,W,D) > select app
+
+
+3. load data into synapse analytics
+
+in synapse (we can create data factory pipeline, notebooks (databricks), and all)  -- synapse (all in one)
+
+create database using synapse
